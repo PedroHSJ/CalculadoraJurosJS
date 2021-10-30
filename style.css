@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    
+}
+
+body{
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+header{
+    color: white;
+
+    padding: 0 0 40px 0;
+
+    padding-top: 40px;
+}
+
+#quadro1{
+    background-color: white;
+    border: 2px solid #888;
+    border-radius: 10px;
+    
+
+    padding: 15px 20px 25px 20px;
+
+    margin: auto auto 10px auto;
+    
+    width: 250px;
+    height: max-content;
+
+    font-size: 16pt;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+#quadro2{
+    background-color: white;
+    border: 2px solid #888;
+    border-radius: 10px;
+    
+
+    padding: 15px 20px 15px 20px;
+
+    margin-bottom: 10px;
+    
+    width: max-content;
+    min-width: 250px;
+    height: max-content;
+
+    font-size: 16pt;
+
+    text-align: center;
+
+    line-height: 35px; 
+}
+p{
+    margin-top: 10px;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+
+    height: 35px;
+    width: 180px;
+}
+
+#botao{
+    margin-top: 15px;
+    width: 250px;
+
+    background-color: rgb(12, 211, 12);
+    color: #fff;
+
+    font-size: 16pt;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+#botao:hover{
+    margin-top: 15px;
+    width: 250px;
+
+    background-color: rgba(12, 211, 12, 0.7);
+    color: #fff;
+
+    font-size: 16pt;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+@media (max-width:375px){
+    #quadro2{
+      max-width: 250px;
+
+        
+
+    }
+}
+   
