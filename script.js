@@ -13,10 +13,10 @@ function calcular(){
         var result = 0
         res.innerHTML = ''
         result = Number.parseInt(v + (v * (t/100)))
-        res.innerHTML += `1° Parcela: <br> - ${v} x ${t}% = ${result} - <br>`
+        res.innerHTML += `1° Parcela: <br> - ${v} x ${t}% = ${result-v} - <br>`
         for ( let c = 1 ; c < p ; c++){
             var result1 = 0
-            res.innerHTML += `${c+1}° Parcela: <br> - ${result} x ${t}% = ${result1 = Number.parseInt(result + (result*(t/100)))} - <br>`
+            res.innerHTML += `${c+1}° Parcela: <br> - ${result} x ${t}% = ${result1 = Number.parseInt(result*(t/100))} - <br>`
             result = Number.parseInt(result + (result * (t/100))) 
             //var result1 = result + (result*(t/100))
             //res.innerHTML += `${c+1}° Parcela: ${result.toFixed(1)} x ${t}% = ${result1.toFixed(1)}<br>`
@@ -26,4 +26,15 @@ function calcular(){
         }
     }
 
+}
+
+var but = document.getElementById('botao2')
+but.onclick = apagar;
+
+function apagar(){
+    document.getElementById('ValorInic').value = '';
+    document.getElementById('TaxaDeJuros').value = '';
+    document.getElementById('Parcelas').value = '';
+
+    
 }
